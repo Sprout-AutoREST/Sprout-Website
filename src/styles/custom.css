@@ -1,0 +1,32 @@
+/* ============================================================
+   Sprout brand theme — green #16A34A, dark navy #111827
+   Overrides Starlight's CSS custom properties.
+   ============================================================ */
+
+:root {
+    /* Accent: light-mode green scale */
+    --sl-color-accent-low: #dcfce7;
+    --sl-color-accent:     #16a34a;
+    --sl-color-accent-high: #14532d;
+}
+
+:root[data-theme='dark'] {
+    /* Accent: dark-mode green scale */
+    --sl-color-accent-low:  #14532d;
+    --sl-color-accent:      #22c55e;
+    --sl-color-accent-high: #86efac;
+
+    /* Tint the nav/sidebar with the brand navy */
+    --sl-color-bg-nav:     #0f1623;
+    --sl-color-bg-sidebar: #0f1623;
+}
+
+/* Hero headline — slightly larger */
+.hero h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+}
+
+/* Bump landing page hero image size a little */
+.hero .hero-image img {
+    max-width: 200px;
+}
