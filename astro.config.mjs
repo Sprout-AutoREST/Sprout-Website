@@ -6,7 +6,6 @@ import starlight from '@astrojs/starlight';
 
 export default defineConfig({
 	site: 'https://sprout-flix29.de',
-	base: '/sprout-website',
 	integrations: [
 		starlight({
 			title: 'Sprout',
